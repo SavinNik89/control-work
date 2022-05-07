@@ -2,7 +2,7 @@
 // Исходный массив вводится с клавиатуры либо задается на старте программы.
 
 
-string [] FillArray()
+string [] FillArray() // создание массива с клавиатуры
 {
     Console.Write("Введите требуемое количество строк в массиве: ");
     int n = Convert.ToInt32(Console.ReadLine()); // Считываем введенное значение, переводим в целочисленный формат
@@ -18,7 +18,7 @@ string [] FillArray()
     return origin;
 }
 
-string [] FilteringArray (string [] array)
+string [] FilteringArray (string [] array) // основная логика, выборка из исходного массива требуемых значений
 {
     string [] result = new string [array.Length]; // создаем новый массив равный исходному
     int i = 0;
